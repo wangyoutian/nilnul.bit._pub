@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Interface Name="nilnul.proposition.predicate.QuantifierI" Collapsed="true">
+    <Position X="3" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>proposition\predicate\QuantifierI.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="nilnul.proposition.predicate.UniversalQuantifierI" Collapsed="true">
+    <Position X="1.75" Y="3.5" Width="1.5" />
+    <InheritanceLine Type="nilnul.proposition.predicate.QuantifierI" FixedFromPoint="true">
+      <Path>
+        <Point X="3.562" Y="2.009" />
+        <Point X="3.562" Y="3.125" />
+        <Point X="2.5" Y="3.125" />
+        <Point X="2.5" Y="3.5" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>proposition\predicate\UniversalQuantifierI.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="nilnul.proposition.predicate.ExistentialQuantifierI" Collapsed="true">
+    <Position X="4" Y="3.5" Width="1.5" />
+    <InheritanceLine Type="nilnul.proposition.predicate.QuantifierI" FixedFromPoint="true">
+      <Path>
+        <Point X="3.938" Y="2.009" />
+        <Point X="3.938" Y="3.125" />
+        <Point X="4.75" Y="3.125" />
+        <Point X="4.75" Y="3.5" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>proposition\predicate\ExistentialQuantifierI.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Font Name="Tahoma" Size="8.25" />
+</ClassDiagram>

@@ -1,0 +1,99 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{D9C2A91A-5529-4601-BC87-0FCDE15DDC7F}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>nilnul.logic</RootNamespace>
+    <AssemblyName>logic</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Assert.cs" />
+    <Compile Include="AssertFailException.cs" />
+    <Compile Include="expr\Expr I.cs" />
+    <Compile Include="expr\Expr.cs" />
+    <Compile Include="expr\ExprI ExprI%28bool%29.cs" />
+    <Compile Include="expr\ExprI.cs" />
+    <Compile Include="op\BinaryOpExpr.cs" />
+    <Compile Include="op\BinaryOpI%28T1,T2%29.cs" />
+    <Compile Include="Logic.cs" />
+    <Compile Include="op\IsTrue.cs" />
+    <Compile Include="proposition\expr\IfThen.cs" />
+    <Compile Include="proposition\expr\PropositionDefinition.cs" />
+    <Compile Include="proposition\expr\Statement.cs" />
+    <Compile Include="proposition\ModusTolensI.cs" />
+    <Compile Include="predicate\AnyI%28T%29.cs" />
+    <Compile Include="predicate\Axiom.cs" />
+    <Compile Include="predicate\Exist%28T%29 I.cs" />
+    <Compile Include="predicate\Exist%28T%29.cs" />
+    <Compile Include="proposition\ModusPonens.cs" />
+    <Compile Include="proposition\ModusPonensI.cs" />
+    <Compile Include="predicate\ExistGreaterThanOne.cs" />
+    <Compile Include="predicate\ExistI%28T%29.cs" />
+    <Compile Include="predicate\Predicate.cs" />
+    <Compile Include="predicate\PredicateI.cs" />
+    <Compile Include="predicate\Prove.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="proposition\expr\TwoGreaterThanOne PropositionI.cs" />
+    <Compile Include="proposition\expr\ExprI.cs" />
+    <Compile Include="proposition\expr\OpI.cs" />
+    <Compile Include="proposition\expr\PropositionI.cs" />
+    <Compile Include="proposition\expr\TwoGreaterThanOne.cs" />
+    <Compile Include="proposition\expr\VarI.cs" />
+    <Compile Include="proposition\expr\PropositionObject.cs" />
+    <Compile Include="proposition\op\Not.cs" />
+    <Compile Include="proposition\op\relation\Contraposition.cs" />
+    <Compile Include="proposition\op\Inversion.cs" />
+    <Compile Include="proposition\op\Relation.cs" />
+    <Compile Include="proposition\op\relation\Conversion.cs" />
+    <Compile Include="proposition\op\relation\Inversion.cs" />
+    <Compile Include="relation\RelationI.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\element3\element3.1.csproj">
+      <Project>{B9C97EF5-61D8-4E4C-80B5-634522529433}</Project>
+      <Name>element3.1</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
